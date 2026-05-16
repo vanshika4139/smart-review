@@ -85,6 +85,4 @@ def add_review(product_id):
     return redirect(url_for('product_detail', product_id=product_id))
 
 if __name__ == '__main__':
-    with app.app_context():
-        seed_database() # Pehle check karega aur dummy products database me daalega
     app.run(debug=True)
